@@ -8,12 +8,12 @@ Tested on macOS (Apple Silicon) with Allegro 5.2.11 from Homebrew.
 
 ```sh
 brew install allegro pkg-config
-make -C panda_knight run
+make run
 ```
 
-`make run` builds into `panda_knight/build/`, copies the assets next to the binary, and starts the game from there. The game loads assets and writes `leaderboard.txt` and `log.txt` relative to the working directory, so run it from `build/`.
+`make run` builds into `build/`, copies the assets next to the binary, and starts the game from there. The game loads assets and writes `leaderboard.txt` and `log.txt` relative to the working directory, so run it from `build/`.
 
-Other targets: `make -C panda_knight clean` (objects and binary), `make -C panda_knight distclean` (whole `build/`).
+Other targets: `make clean` (objects and binary), `make distclean` (whole `build/`).
 
 ## How to play
 
